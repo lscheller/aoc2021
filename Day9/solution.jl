@@ -118,7 +118,7 @@ function getNeighbors(arr, (i, j))
             neighboridxs = push!(neighboridxs, (maxrow,2))
         elseif (i,j) == (maxrow, maxcol)
             neighboridxs = push!(neighboridxs, (maxrow-1,maxcol))
-            neighboridxs = push!(neighboridxs, (maxrow,maxcol))
+            neighboridxs = push!(neighboridxs, (maxrow,maxcol-1))
         elseif i == 1
             neighboridxs = push!(neighboridxs, (i, j-1))
             neighboridxs = push!(neighboridxs, (i, j+1))
